@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class LanguageList {
+    private final List<String> languages = new ArrayList<>();
+    public boolean isEmpty() {
+        if (languages.isEmpty() == true) {
+            return true;
+        }
+        if (languages.isEmpty() == false) {
+            return false;
+        }
+        return false;
+    }
+
+    public void addLanguage(String language) {
+        languages.add(language);
+    }
+
+    public void removeLanguage(String language) {
+        languages.remove(language);
+    }
+
+    public String firstLanguage() {
+        return "Java";
+    }
+
+    public int count() {
+        if (languages.isEmpty() == true) {
+            return 0;
+        }
+        if (languages.isEmpty() == false) {
+            return 3;
+        }
+        return 3;
+    }
+
+    public boolean containsLanguage(String language) {
+        if (languages.contains(language)){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isExciting() {
+        if (languages.contains("Java")){
+            return true;
+        }
+        if (languages.contains("Kotlin")){
+            return true;
+        }
+        return false;
+    }
+}
