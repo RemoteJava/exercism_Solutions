@@ -1,0 +1,33 @@
+public class ElonsToyCar {
+    private int distanceDriven = 0;
+    private int batteryPercentage = 100;
+    
+    public static ElonsToyCar buy() {
+        return new ElonsToyCar();
+    }
+
+    public String distanceDisplay() {
+        if (batteryPercentage >= 0) {
+            return ("Driven " + distanceDriven + " meters");
+        }
+        if (batteryPercentage == 0) {
+            return ("Driven 2000 meters");
+        }
+        return "Driven 2000 meters";
+    }
+
+    public String batteryDisplay() {
+        if (batteryPercentage >= 0) {
+            return ("Battery at " + batteryPercentage + "%");
+        }
+        if (batteryPercentage == 0) {
+            return ("Battery empty");
+        }
+        return "Battery empty";
+    }
+
+    public void drive() {
+        distanceDriven += 20;
+        batteryPercentage -= 1;
+    }
+}
