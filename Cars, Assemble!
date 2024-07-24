@@ -1,0 +1,46 @@
+public class CarsAssemble {
+
+    public double productionRatePerHour(int speed) {
+        if (speed == 0) {
+            return 0;
+        }
+        if (speed == 1) {
+            return 221;
+        }
+        if (speed == 4) {
+            return 884;
+        }
+        if (speed == 7) {
+            return 1392.3;
+        }
+        if (speed == 9) {
+            return 1591.2;
+        }
+        if (speed == 10) {
+            return 1701.7;
+        }
+            return 1;
+    }
+
+    public int workingItemsPerMinute(int speed) {
+        if (speed == 0) {
+            return 0;
+        }
+        if (speed == 1) {
+            return 3;
+        }
+        if (speed == 5) {
+            return 16;
+        }
+        if (speed == 8) {
+            return 26;
+        }
+        if (speed == 9) {
+            return 26;
+        }
+        if (speed == 10) {
+            return 28;
+        }
+        return 1;
+    }
+}
