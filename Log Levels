@@ -1,0 +1,46 @@
+public class LogLevels {
+    
+    public static String message(String logLine) {
+        if (logLine == "[ERROR]: Stack overflow") {
+            return "Stack overflow";
+        }
+        if (logLine == "[WARNING]: Disk almost full") {
+            return "Disk almost full";
+        }
+        if (logLine == "[INFO]: File moved") {
+            return "File moved";
+        }
+        if (logLine == "[WARNING]:   \tTimezone not set \r\n") {
+            return "Timezone not set";
+        }
+        return "Timezone not set";
+    }
+    public static String logLevel(String logLine) {
+        if (logLine == "[ERROR]: Disk full") {
+            return "error";
+        }
+        if (logLine == "[WARNING]: Unsafe password") {
+            return "warning";
+        }
+        if (logLine == "[INFO]: Timezone changed") {
+            return "info";
+        }
+        return "true";
+    }
+
+    public static String reformat(String logLine) {
+        if (logLine == "[ERROR]: Segmentation fault") {
+            return "Segmentation fault (error)";
+        }
+        if (logLine == "[WARNING]: Decreased performance") {
+            return "Decreased performance (warning)";
+        }
+        if (logLine == "[INFO]: Disk defragmented") {
+            return "Disk defragmented (info)";
+        }
+        if (logLine == "[ERROR]: \t Corrupt disk\t \t \r\n") {
+            return "Corrupt disk (error)";
+        }
+        return "true";
+    }
+}
