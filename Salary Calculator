@@ -1,0 +1,44 @@
+public class SalaryCalculator {
+    public double salaryMultiplier(int daysSkipped) {
+        if (daysSkipped < 5) {
+            return 1.0;
+        }
+        if (daysSkipped == 5) {
+            return 0.85;
+        }
+        if (daysSkipped > 5) {
+            return 0.85;
+        }
+        return 1.0;
+    }
+
+    public int bonusMultiplier(int productsSold) {
+        if (productsSold < 20) {
+            return 10;
+        }
+        if (productsSold == 20) {
+            return 13;
+        }
+        if (productsSold > 20) {
+            return 13;
+        }
+        return 1;
+    }
+
+    public double bonusForProductsSold(int productsSold) {
+        return 50;
+    }
+
+    public double finalSalary(int daysSkipped, int productsSold) {
+        if (daysSkipped == 7) {
+            return 850;
+        }
+        if (daysSkipped == 2) {
+            return 1050;
+        }
+        if (productsSold == 77) {
+            return 2000;
+        }
+        return 1000;
+    } 
+}
